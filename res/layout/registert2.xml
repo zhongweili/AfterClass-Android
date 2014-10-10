@@ -1,0 +1,81 @@
+
+<ScrollView  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:padding="@dimen/space_medium" 
+        android:layout_width="fill_parent" 
+       
+        android:layout_height="wrap_content">
+
+        
+        <EditText 
+            android:id="@+id/phonenum" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20.0dip" 
+            android:hint="输入手机号码" 
+            android:singleLine="true"  />
+        
+      
+        <!--    style="@style/textstyle_mailinput"  --> 
+       
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="90.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+     
+            android:gravity="center_vertical|center_horizontal"
+            android:text="获取手机验证码"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp" />
+<!--        android:background="@drawable/sel_bg_orangebt" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="15.0dip"
+    
+            android:orientation="vertical" >
+<!--         android:background="@drawable/shape_bg" -->
+            <EditText
+                android:id="@+id/phoneyanzheng"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="填写手机验证码"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+        
+        <Button 
+            android:id="@+id/confirm" 
+   
+            android:textColor="#ffffffff" 
+            
+  
+            android:padding="@dimen/space_medium" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="30.0dip" 
+            android:text="提交" />
+       <!--          android:textSize="@dimen/textsize_c2"  -->
+         <!--         android:background="@drawable/sel_bg_bluebt"  -->
+        
+        
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加活动"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    
+<TextView
+	android:id="@+id/widget33"
+	android:layout_width="wrap_content"
+	android:layout_height="20dp"
+	android:text="&#20027;&#39064;"
+	android:textStyle="bold"
+	
+	android:layout_x="45dp"
+	android:layout_y="49dp" />
+<EditText
+	android:id="@+id/widget34"
+	android:layout_width="145dp"
+	android:layout_height="34dp"
+	android:textSize="18sp"
+	android:layout_x="109dp"
+	android:layout_y="48dp" />
+<TextView
+	android:id="@+id/widget35"
+	android:layout_width="57dp"
+	android:layout_height="26dp"
+	android:text="&#25551;&#36848;"
+	android:layout_x="44dp"
+	android:layout_y="127dp" />
+<EditText
+	android:id="@+id/widget36"
+	android:layout_width="149dp"
+	android:layout_height="91dp"
+	android:textSize="18sp"
+	android:layout_x="107dp"
+	android:layout_y="130dp" />
+<TextView
+	android:id="@+id/widget37"
+	android:layout_width="wrap_content"
+	android:layout_height="21dp"
+	android:text="&#25130;&#27490;&#26085;&#26399;"
+	android:layout_x="41dp"
+	android:layout_y="258dp" />
+<EditText
+	android:id="@+id/widget34_copy"
+	android:layout_width="145dp"
+	android:layout_height="34dp"
+	android:textSize="18sp"
+	android:layout_x="110dp"
+	android:layout_y="255dp" />
+<TextView
+	android:id="@+id/widget39"
+	android:layout_width="wrap_content"
+	android:layout_height="22dp"
+	android:text="&#36992;&#35831;"
+	android:layout_x="53dp"
+	android:layout_y="333dp" />
+<EditText
+	android:id="@+id/widget40"
+	android:layout_width="144dp"
+	android:layout_height="36dp"
+	android:textSize="18sp"
+	android:layout_x="107dp"
+	android:layout_y="332dp" />
+</AbsoluteLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation = "vertical"
+    android:background="#D2691E">
+
+        <TextView
+            android:id="@+id/name"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:paddingBottom="4dip"
+	        android:paddingLeft="40dip"
+	        android:text="To"/>
+        
+        <ImageView
+	        android:id="@+id/image_theme"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/ic_launcher" />
+        
+        <TextView
+            android:id="@+id/name_theme"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:paddingBottom="4dip"
+	        android:paddingLeft="40dip"
+	        android:text=""/>
+        
+        
+  	<TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:paddingBottom="4dip"
+        android:paddingLeft="40dip"
+        android:text="描述"/>
+  	
+  	<EditText 
+  	    android:id="@+id/edit_text"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="吃走起啊～"/>
+    
+    
+</LinearLayout>

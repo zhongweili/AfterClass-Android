@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_search"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="search"
+          android:showAsAction="ifRoom"
+          android:actionViewClass="android.widget.SearchView" />
+    
+    <item android:id="@+id/action_sort"
+          android:icon="@drawable/ic_action_new"
+          android:title="sort"
+          android:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_add_person"
+                  android:icon="@drawable/ic_action_add_person"
+                  android:title="添加朋友"
+                  android:onClick="onSort" />
+            <item android:id="@+id/action_add_group"
+                  android:icon="@drawable/ic_action_add_group"
+                  android:title="创建群"
+                  android:onClick="onSort" />
+            <item android:id="@+id/action_sort_scan"
+                  android:icon="@android:drawable/ic_menu_sort_by_size"
+                  android:title="扫一扫"
+                  android:onClick="onSort" />
+        </menu>
+    </item>
+</menu>

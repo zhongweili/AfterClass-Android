@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="im.afterclass.android"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+  	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+  	
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    
+
+    <application
+        android:name="DemoApplication"
+        android:allowBackup="true"
+        android:label="课后"
+        android:icon="@drawable/ic_launcher">
+        
+        <activity
+            android:name="im.afterclass.android.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"
+            android:label="我的课后" 
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 登陆 -->
+        <activity
+            android:name="im.afterclass.android.activity.FirstActivity"
+            android:theme="@style/horizontal_slide" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+		   android:name="cn.sharesdk.framework.ShareSDKUIShell"
+		   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		   android:configChanges="keyboardHidden|orientation|screenSize"
+		   android:screenOrientation="portrait"
+		   android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <activity
+     		android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        
+        <activity
+		   android:name="cn.smssdk.SMSSDKUIShell"
+		   android:configChanges="keyboardHidden|orientation|screenSize"
+		   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		   android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <!-- 加载 -->
+        <activity
+     		android:name=".activity.LoadActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+     		android:name=".activity.LoadfirstActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        
+        <!-- 注册 -->
+        <activity
+     		android:name=".activity.RegisterActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+   			android:name=".activity.Register1Activity"
+            android:theme="@style/horizontal_slide">
+        </activity>
+        <activity
+            android:name=".activity.Register2Activity"
+            android:theme="@style/horizontal_slide">
+        </activity>
+          <activity
+            android:name=".activity.Register3Activity"
+            android:theme="@style/horizontal_slide">
+        </activity>
+        <!-- 活动详情 -->
+        <activity 
+            android:name=".activity.NoticeboardDetailActivity"
+            android:theme="@style/Theme.AppCompat"></activity>
+        
+        <!-- 活动 -->
+        <activity
+            android:name=".activity.CreateActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="活动创建" >
+        </activity>
+        <activity 
+            android:name=".activity.LaunchActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="活动预览">
+        </activity>
+        <activity 
+            android:name=".activity.InvitePickActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="邀请">
+        </activity>
+        <activity 
+            android:name=".activity.PersonalActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="我">
+        </activity>
+        <activity 
+            android:name=".activity.MyActivitiesActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="我的活动">
+        </activity>
+        
+        <!-- 个人资料-->
+        <activity 
+            android:name=".activity.PersonalInfoActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="我的资料">
+        </activity>
+        
+        <!-- 更改昵称-->
+        <activity 
+            android:name=".activity.ChangeNicknameActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="修改昵称">
+        </activity>
+        
+        <!-- 更改签名-->
+        <activity 
+            android:name=".activity.ChangeSignActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="修改签名">
+        </activity>
+        
+        <!-- 更改当前状态-->
+        <activity 
+            android:name=".activity.ChangeCurrentStateActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="修改状态">
+        </activity>
+        
+        <!-- 我的活动 -->
+        <activity 
+            android:name=".activity.MyActivities"
+            android:theme="@style/Theme.AppCompat"
+            android:label="我的活动">
+        </activity>
+        
+        <!-- 设置 -->
+        <activity
+            android:name=".activity.SettingsActivity"
+     		android:theme="@style/Theme.AppCompat"
+     		android:label="设置">
+        </activity>
+		<!-- 安排 -->
+        <activity 
+            android:name=".activity.ArrangeActivityActivity"
+            android:theme="@style/horizontal_slide"></activity>
+        
+        <activity 
+            android:name=".activity.NoticeBoardActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="布告栏"></activity>
+        <!-- 添加好友 -->
+        <activity 
+            android:name=".activity.AddFriendActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="添加好友"></activity>
+        <!-- 添加活动 -->
+        <activity 
+            android:name=".activity.AddEventActivity"
+            android:theme="@style/horizontal_slide"></activity>
+        <!-- 聊天页面 -->
+        <activity
+            android:name=".activity.ChatActivity"
+            android:theme="@style/horizontal_slide"
+  			android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- 添加好友 -->
+        <activity
+            android:name=".activity.AddContactActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组详情 -->
+        <activity
+            android:name=".activity.GroupDetailsActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组列表 -->
+        <activity
+            android:name=".activity.GroupsActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 新建群组 -->
+        <activity
+            android:name=".activity.NewGroupActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 退出群组提示框 -->
+        <activity
+            android:name=".activity.ExitGroupDialogActivity"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <!-- 群组选人 -->
+        <activity
+            android:name=".activity.GroupPickContactsActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" /> 
+        <!-- 地图 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.BaiduMapActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name=".activity.NewFriendsMsgActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+		
+        <!-- 转发消息用户列表页面 -->
+   		<activity
+            android:name=".activity.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name=".activity.ContextMenuActivity"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name=".activity.AlertDialogActivity"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name=".activity.ShowBigImageActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        
+        <!-- 公开的群聊列表 -->
+        <activity
+            android:name=".activity.PublicGroupsActivity"
+            android:theme="@style/horizontal_slide" 
+            android:windowSoftInputMode="adjustPan"
+            >
+        </activity>
+        <activity
+            android:name=".activity.GroupSimpleDetailActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        
+        <!-- 开机自启动服务 -->
+        <receiver android:name="im.afterclass.android.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <category android:name="android.intent.category.LAUNCHER" />  
+            </intent-filter>
+        </receiver>
+        
+        
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="easemob-demo#chatdemoui" />
+		<!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+		<!-- 课后Android UMENG APPKEY -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53e33ba6fd98c5b2390001dd" >
+        </meta-data>
+    </application>
+
+</manifest>

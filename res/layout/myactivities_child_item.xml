@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:padding="4dip"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+       
+        android:paddingTop="20dip">
+
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+	            android:id="@+id/image_theme"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:src="@drawable/defaultpic" />
+            
+            <TextView
+		        android:id="@+id/launch_theme"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_alignTop="@id/image_theme"
+		        android:layout_alignLeft="@id/image_theme"
+		        android:text=""
+		        android:textSize="16dp"/>
+            
+            <TextView
+		        android:id="@+id/show_time"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@id/image_theme"
+		        android:text=""
+		        android:textSize="32dp"/>
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dip"
+                android:layout_alignParentLeft="true" 
+                android:layout_weight="2" > 
+
+                <TextView
+                    android:id="@+id/launch_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dip"
+			        android:paddingRight="40dip"
+                    android:layout_weight="1" >
+                </TextView>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1" >
+                
+                <ImageView
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1" 
+			        android:paddingBottom="4dip"
+			        android:src="@drawable/time" 
+			        android:text="时间"
+			        android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/launch_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dip"
+			        android:paddingRight="40dip"
+			        android:text=""
+                    android:layout_weight="1" >
+                </TextView>
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1" >
+                
+                <ImageView
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1" 
+			        android:paddingBottom="4dip"
+			        android:src="@drawable/location" 
+			        android:text="地点"
+			        android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/launch_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dip"
+			        android:paddingRight="40dip"
+                    android:layout_weight="1" >
+                </TextView>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dip"
+                android:layout_weight="1" >
+                
+                
+
+                <TextView
+                    android:id="@+id/launch_thought"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dip"
+			        android:paddingRight="40dip"
+                    android:layout_weight="1" >
+                </TextView>
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dip"
+                android:layout_weight="1" >
+                
+                
+
+                <TextView
+                    android:id="@+id/launch_applicate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dip"
+			        android:paddingRight="40dip"
+			        android:text="暂无人报名"
+                    android:layout_weight="1" >
+                </TextView>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

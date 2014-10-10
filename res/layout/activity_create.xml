@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    
+	<EditText
+		android:id="@+id/edit_theme"    
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:paddingBottom="4dip"
+        android:paddingLeft="40dip"
+        android:text="主题"/>
+
+    <ImageView
+        android:id="@+id/image_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/defaultpic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+		<TextView
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:paddingBottom="4dip"
+	        android:paddingLeft="40dip"
+	        android:text="推荐地点"/>
+        
+	    <RelativeLayout
+	        android:layout_width="205dp"
+	        android:layout_height="wrap_content"
+	        
+	        android:gravity="center"
+	        android:minHeight="80dp" >
+	
+	        <im.afterclass.android.widget.SegmentedGroup
+	            android:id="@+id/segmented_place"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="10dp"
+	            android:orientation="horizontal">
+	
+	            <RadioButton
+	                android:id="@+id/button1_place"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="码字"
+	                style="@style/RadioButton" />
+	
+	            <RadioButton
+	                android:id="@+id/button2_place"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="大众点评"
+	                style="@style/RadioButton" />
+	        </im.afterclass.android.widget.SegmentedGroup>
+	
+	    </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:gravity="center_vertical">
+		<TextView
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:paddingBottom="4dip"
+	        android:paddingLeft="40dip"
+	        android:text="推荐时间"/>
+       <RelativeLayout
+	        android:layout_width="205dp"
+	        android:layout_height="wrap_content"
+	      
+	        android:gravity="center"
+	        android:minHeight="80dp" >
+	
+	        <im.afterclass.android.widget.SegmentedGroup
+	            android:id="@+id/segmented_time"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="10dp"
+	            android:orientation="horizontal">
+	
+	            <RadioButton
+	                android:id="@+id/button1_time"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="码字"
+	                style="@style/RadioButton" />
+	
+	            <RadioButton
+	                android:id="@+id/button2_time"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="设定"
+	                style="@style/RadioButton" />
+	        </im.afterclass.android.widget.SegmentedGroup>
+	
+	    </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+         <TextView
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:paddingBottom="4dip"
+	        android:paddingLeft="40dip"
+	        android:text="想法"/>
+
+         <EditText
+             android:id="@+id/edit_thought"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingRight="40dip"
+             android:layout_weight="0"
+             android:text="饿了。。"
+             android:ems="10" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <TextView
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"     
+	        android:paddingBottom="4dip"
+	        android:paddingLeft="40dip"
+	        android:text="被邀请后"/>
+
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="？" />
+        
+        <TextView
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="4dip"
+	        android:paddingRight="40dip"
+	        android:text="小时内回复"/> 
+        
+    </LinearLayout>
+
+</LinearLayout>

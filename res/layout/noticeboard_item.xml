@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@color/aqua"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/defaultpic3" />
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/yellow"
+            android:text="骑行" />
+
+        <TextView
+            android:id="@+id/remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/picture"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textSize="30sp"
+            android:text="3:00:00" />
+        
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/location"
+                android:background="@color/transparent"
+                android:textColor="@color/black"
+                android:text="卫津路" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/time"
+                android:background="@color/transparent"
+                android:textColor="@color/black"
+                android:text="2014.09.21 13:00-14:00" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="有骑行想法的同学让我们一起去happy！" />
+
+            <TextView
+                android:id="@+id/participant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="暂无人报名"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+    
+</LinearLayout>
+<LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            
+            <im.afterclass.android.widget.CircleImageView 
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/default_avatar"/>
+            
+            <TextView
+                android:id="@+id/name" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="by: 在下"/>
+            
+        </LinearLayout>
+</RelativeLayout>

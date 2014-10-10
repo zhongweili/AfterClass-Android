@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item type="id" name="candidate_friend">false</item>
+	<item type="id" name="add_friend_by_search_submit">false</item>
+	
+</resources>

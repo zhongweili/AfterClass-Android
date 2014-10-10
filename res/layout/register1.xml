@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageButton
+	android:id="@+id/widget33"
+	android:layout_width="80dp"
+	android:layout_height="72dp"
+	android:layout_x="121dp"
+	android:layout_y="27dp" />
+<TextView
+	android:id="@+id/widget34"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="学校"
+	android:textSize="18sp"
+	android:layout_x="49dp"
+	android:layout_y="158dp" />
+<EditText
+	android:id="@+id/widget1"
+	android:layout_width="163dp"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:layout_x="108dp"
+	android:layout_y="148dp" />
+<TextView
+	android:id="@+id/widget34_copy"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="年级"
+	android:textSize="18sp"
+	android:layout_x="50dp"
+	android:layout_y="264dp" />
+<TextView
+	android:id="@+id/widget35_copy"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="专业"
+	android:textSize="18sp"
+	android:layout_x="49dp"
+	android:layout_y="210dp" />
+<EditText
+	android:id="@+id/widget2"
+	android:layout_width="163dp"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:layout_x="107dp"
+	android:layout_y="206dp" />
+<EditText
+	android:id="@+id/widget3"
+	android:layout_width="163dp"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:layout_x="105dp"
+	android:layout_y="262dp" />
+<Button
+	android:id="@+id/btn1"
+	android:layout_width="70dp"
+	android:layout_height="wrap_content"
+	android:text="Go"
+
+	android:layout_x="118dp"
+	android:layout_y="322dp" />
+<TextView
+	android:id="@+id/widget41"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="已有账号，直接"
+	android:layout_x="18dp"
+	android:layout_y="402dp" />
+
+<Button
+    android:id="@+id/btn2"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_x="116dp"
+    android:layout_y="396dp"
+    android:text="登陆" />
+
+<TextView
+    android:id="@+id/widget32"
+    android:layout_width="156dp"
+    android:layout_height="50dp"
+    android:layout_x="95dp"
+    android:layout_y="96dp"
+    android:text="AfterClass"
+    android:textSize="30sp"
+    android:textStyle="bold" />
+
+</AbsoluteLayout>
